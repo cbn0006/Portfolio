@@ -1,8 +1,9 @@
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { MapPin } from "lucide-react";
-
+import { Mail, MapPin } from "lucide-react";
+import { LinkedInLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
 
 export default function ContactMe () {
     return (
@@ -29,24 +30,51 @@ export default function ContactMe () {
                     > 
                         Resume 
                     </Button>
-                    <Button 
-                        variant="ghost" 
-                        className="justify-start"
-                        style={{ cursor: 'pointer' }}
-                    > 
-                        Resume 
-                    </Button>
-                    
                 </div>
                 <div className="col-span-2 flex flex-col space-y-2">
                     <p className="text-lg font-bold">
                         Contact Me
                     </p>
-                    <div className="flex flex-row space-x-1 items-center">
-                        <MapPin />
+                    <div className="flex flex-row space-x-2 items-center">
+                        <MapPin size={32}/>
                         <div>
                             <p>Location</p>
                             <p className="text-muted-foreground">Auburn, AL</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-row space-x-2 items-center">
+                        <Mail size={32}/>
+                        <div>
+                            <p>Email</p>
+                            <p className="text-muted-foreground">codybnic@gmail.com</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-row space-x-2 items-center">
+                        <Link href="www.linkedin.com/in/cody-nichols-091431234" passHref>
+                            <Button 
+                                variant="link"
+                                style={{ cursor: 'pointer', padding: 0 }}
+                            >
+                                <LinkedInLogoIcon style={{ width: 32, height: 32 }}/>
+                            </Button>
+                        </Link>
+                        <div>
+                            <p>LinkedIn</p>
+                            <p className="text-muted-foreground">www.linkedin.com/in/cody-nichols-091431234</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-row space-x-2 items-center">
+                        <Link href="https://github.com/codybnic" passHref>
+                            <Button 
+                                variant="link"
+                                style={{ cursor: 'pointer', padding: 0 }}
+                            >
+                                <GitHubLogoIcon style={{ width: 32, height: 32 }}/>
+                            </Button>
+                        </Link>
+                        <div>
+                            <p>GitHub</p>
+                            <p className="text-muted-foreground">github.com/cbn0006</p>
                         </div>
                     </div>
                 </div>

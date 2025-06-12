@@ -2,17 +2,22 @@ import Image from "next/image";
 
 export default function AboutMe () {
     return (
-        <div className="flex flex-row justify-center">
+        <div className="flex grid grid-cols-2">
             <Image
                 src="/file.svg"
                 alt="Person 1"
                 width={250}
                 height={350}
-                className="rounded-full"
+                className="flex rounded-full justify-self-end"
             />
-            <p>
-                Description
-            </p>
+            <div>
+                <p className="font-bold text-xl">
+                    Description
+                </p>
+                <p>
+                    Desc
+                </p>
+            </div>
         </div>
     );
 }
