@@ -7,7 +7,7 @@ import { GraduationCap, BriefcaseBusiness, Mail, LaptopMinimalCheck } from "luci
 
 export default function Navbar() {
     return (
-        <div className="flex flex-col">
+        <div className="sticky top-0 z-50 flex flex-col bg-background">
             <div className="flex flex-1 p-2">
                 <div className="flex flex-1 justify-center">
                     <Button variant="ghost" style={{ cursor: 'pointer' }}> 

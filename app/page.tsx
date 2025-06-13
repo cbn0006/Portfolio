@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import ContactMe from "@/components/ContactMe";
 import AboutMe from "@/components/AboutMe";
 import Education from "@/components/Education";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar />
       <AboutMe />
       <Education />
+      <Experience />
       <ContactMe />
     </div>
   );

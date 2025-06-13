@@ -64,7 +64,7 @@ export default function ContactMe () {
                         </div>
                     </div>
                     <div className="flex flex-row space-x-2 items-center">
-                        <Link href="https://github.com/codybnic" passHref>
+                        <Link href="https://github.com/cbn0006" passHref>
                             <Button 
                                 variant="link"
                                 style={{ cursor: 'pointer', padding: 0 }}
