@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import { experienceData } from "@/data/experienceData";
+// import { Badge } from "@/components/ui/badge";
 
 export default function Experience() {
   return (
