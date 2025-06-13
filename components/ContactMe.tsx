@@ -80,7 +80,7 @@ export default function ContactMe () {
                 </div>
             </div>
             <p className="text-center text-[0.6rem] text-muted-foreground">
-                This site was fully developed by Cody Nichols..
+                This site was fully developed by Cody Nichols.
             </p>
         </div>
     );
