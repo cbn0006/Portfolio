@@ -3,7 +3,7 @@
 import {Button} from "@/components/ui/button";
 import {Separator} from "@/components/ui/separator";
 import { GitHubLogoIcon, LinkedInLogoIcon, CodeIcon, PersonIcon } from '@radix-ui/react-icons';
-import { GraduationCap, BriefcaseBusiness, Mail, LaptopMinimalCheck } from "lucide-react";
+import { BriefcaseBusiness, Mail, LaptopMinimalCheck } from "lucide-react";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -15,10 +15,6 @@ export default function Navbar() {
                     <Button variant="ghost" style={{ cursor: 'pointer' }}> 
                         <PersonIcon />
                         About Me
-                    </Button>
-                    <Button variant="ghost" style={{ cursor: 'pointer' }}>
-                        <GraduationCap />
-                        Education
                     </Button>
                     <Button variant="ghost" style={{ cursor: 'pointer' }}>
                         <BriefcaseBusiness />
